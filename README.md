@@ -19,10 +19,11 @@ This is a personal QA project to practice and demonstrate manual testing skills 
 ## 📂 Contents
 
 - `TEST_PLAN.md` – Test strategy and coverage
-- `CASOS_DE_PRUEBA.md` – Documented test cases
-- `REPORTE_DE_BUGS.md` – Reported bugs or improvements
-- `INFORME_DE_PRUEBAS_EXPLORATORIAS.md` – Exploratory session notes
-- `ANALISIS_UI_UX.md` – UI/UX observations
+- `TEST_CASES.md` – Documented test cases
+- `BUG_REPORTS.md` – Reported bugs or improvements
+- `EXPLORATORY_NOTES.md` – Exploratory session notes
+- `UI_UX_REVIEW.md` – UI/UX observations
+
 
 ## 👩‍💻 Author
 
