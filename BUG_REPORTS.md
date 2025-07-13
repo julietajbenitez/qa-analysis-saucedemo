@@ -16,6 +16,9 @@ Using `locked_out_user` credentials blocks access, but error is generic. The iss
 
 This is expected behavior; no defect identified.
 
+**Screenshot:**
+![BUG-001 screenshot](./images/BUG001.png)
+
 ---
 
 ## BUG-002: Incorrect empty-field error message
@@ -38,30 +41,34 @@ When attempting login with both fields empty, the system shows:
 Actual: “Username is required”
 Expected: “Username and Password are required”
 ```
+**Screenshot:**
+![BUG-002 screenshot](./images/BUG002.png)
 
 ---
 
-## BUG-003: Inventory images broken for `problem_user`
+## BUG-003: Inventory images are identical for `problem_user`
 
 **Severity:** Major  
 **Priority:** High  
 
 **Description:**  
-When logging in with the `problem_user` account, the inventory page displays broken or incorrect product images. 
-This suggests either missing assets or intentional image corruption for testing purposes, but from a user experience perspective it behaves like a defect.
+When logging in with the `problem_user` account, the inventory page displays the **same** product image for every item, making it impossible to distinguish between different products. This suggests a data mapping issue or placeholder image being reused.
 
 **Steps to Reproduce:**  
-1. Navigate to [https://www.saucedemo.com](https://www.saucedemo.com)  
+1. Navigate to https://www.saucedemo.com  
 2. Login with credentials:  
    - Username: `problem_user`  
    - Password: `secret_sauce`  
 3. Observe the product images on the inventory page
 
 **Expected Result:**  
-All product images should be displayed correctly and consistently.
+Each product shows its own distinct image.
 
 **Actual Result:**  
-Several images are broken or mismatched.
+All products display an identical image (no variation).
+
+**Screenshot:**
+![BUG-003 screenshot](./images/BUG003.png)
 
 ---
 
@@ -86,3 +93,5 @@ A combined error message should list all required fields or multiple messages sh
 **Actual Result:**  
 Only one error is shown per submission (e.g., “Error: First Name is required”).
 
+**Screenshot:**
+![BUG-004 screenshot](./images/BUG004.png)
