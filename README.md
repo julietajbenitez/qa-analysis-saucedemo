@@ -18,7 +18,7 @@ This is a personal QA project to practice and demonstrate manual testing skills 
 
 ## 📂 Contents
 
-- `PLAN_DE_PRUEBAS.md` – Test strategy and coverage
+- `TEST_PLAN.md` – Test strategy and coverage
 - `CASOS_DE_PRUEBA.md` – Documented test cases
 - `REPORTE_DE_BUGS.md` – Reported bugs or improvements
 - `INFORME_DE_PRUEBAS_EXPLORATORIAS.md` – Exploratory session notes
